@@ -11,7 +11,7 @@ This is an Ubuntu 12.04 LTS VM. You can login using:
   + Username: `cs102`
   + Password: `memory`
 
-# Lab 01 – Excersises
+# Lab 01 – Exercises
 
 ## Git Setup
 You need to setup git on every machine you plan to use for CS 102 this semester. This includes your own desktop/laptop(s) and the [course VM](http://ee-classes.usc.edu/cs101/cs102-vm.ova). The VM has git already installed. You do, however, still need to configure it.
@@ -53,7 +53,7 @@ git config --global core.autocrlf true
 ### SSH Key-based Authentication
 By default, git communicates with servers using the git protocol that works over [SSH](http://en.wikipedia.org/wiki/Secure_Shell). Therefore, it is advised to generate [SSH keys](http://en.wikipedia.org/wiki/Secure_Shell#Key_management) for authentication purposes.
 
-This guide will walk you through generating an SSH keypair:
+This guide will walk you through generating an SSH keypair. This page auto-detects your operating system, so make sure your are following the correct instructions. Keep in mind that step 2 is only needed if you have an existing key pair:
 > https://help.github.com/articles/generating-ssh-keys
 
 You will need the contents of the `id_rsa.pub` in the following part of the assignment.
@@ -85,26 +85,47 @@ You will be sent an email to verify your email address. Do that before proceedin
 ### Update Your Profile
 You need to update your profile to include your name and SSH public key. There are also some optional settings you can change such as your avatar (profile picture) and [email](https://github.com/blog/1214-notification-email-improvements) [notifications](https://github.com/blog/1204-notifications-stars).
 
-1.In your [Profile Settings](https://github.com/settings/profile):
+In your [Profile Settings](https://github.com/settings/profile):
   + Put your real name in the name field. This is to ensure the TAs & CPs know who you are regardless of your username.
   + [Optional] Change your [avatar](http://gravatar.com/)
-1.In your [SSH Key Settings](https://github.com/settings/ssh):
+
+In your [SSH Key Settings](https://github.com/settings/ssh):
   + Click on **Add SSH Key**
   + Provide a **name** for the key, such as "CS102 VM Key"
   + Copy the contents of your `id_rsa.pub` file and paste them into the **key** field
   + Click **Add Key**
-1.[Optional] You can add more emails to your GitHub account using the [Email Settings](https://github.com/settings/emails) page.
-1.[Optional] Set your notification preferences on the [Notification Setttings](https://github.com/settings/notifications) page.
+
+[Optional] You can add more emails to your GitHub account using the [Email Settings](https://github.com/settings/emails) page.
+
+[Optional] Set your notification preferences on the [Notification Settings](https://github.com/settings/notifications) page.
 
 ### Demo
   1. Show your TA/CP your [GitHub Contributions](https://github.com/blog/1360-introducing-contributions) page at https://github.com/username where `username` is your GitHub username.
   1. Show your TA/CP your [SSH Key](https://github.com/settings/ssh) settings page.
+  1. Ask your TA/CP to add your username to your Blackboard profile.
 
 ## HelloWorld Repsitory
-- clone this repo
-- check log
+The most basic use of git is to checkout a code repository to your local machine. That is called **cloning** a repository. To clone this repository, you run the following command:
+```shell
+git clone git@github.com:usc-csci102-spring2013/HelloWorld.git
+```
+This will create a copy of the [HelloWorld](https://github.com/usc-csci102-spring2013/HelloWorld) repository on your machine in a directory named `HelloWorld`. Unlike other version control systems such as subversion, you now have a complete copy of the whole repository including its history.
+
+### Basic Operations
+To make sure your repositroy is up to date with the version on the server, you `pull` the most recent changes to your local copy:
+```shell
+git pull
+```
+
+If you want to check the commit history of this repository, you just type:
+```shell
+git log
+```
+This lists the commit history in reverse chronological order. You navigate this screen using the `SPACE`, `ENTER` or arrow keys. To quit press `q`.
+
 
 ## FightOn Repsitory
+
 - create your own repo
 - update .gitignore
 - push FightOn.cpp
