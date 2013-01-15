@@ -168,10 +168,16 @@ The text after the `-m` is actually a mandatory message that git adds as part of
 If you refresh your FightOn repository webpage on GitHub, you will notice that it does not yet have your `FightOn.cpp`. The reason being that although you committed the file locally, you have yet to push the changes to the server. You do that by:
 ```shell
 git push
-``` 
+```
+
+Finally, lets do a `git status` again. You will notice that `a.out` is still listed as an untracked file. To ignore unwanted files such as log files or executables, we create a special file called `.gitignore` (note the leading dot) and we list all the unwanted files (one per line).
+
+So, create a `.gitignore` file and list the `a.out` file in it then do a `git status`! Don't forget to push your `.gitignore` to your repository. 
 
 ## Demo
-Show your TA/CP your FightOn repository on GitHub.
+Show your TA/CP your FightOn repository on GitHub which should include:
+  - `FightOn.cpp`
+  - `.gitignore`
 
 ## Git Reources
 For more information about git, visit our [Git Resources](https://github.com/usc-csci102-spring2013/HelloWorld/blob/master/Git-Resources.md) document.
