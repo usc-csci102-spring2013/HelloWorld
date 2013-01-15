@@ -85,19 +85,19 @@ You will be sent an email to verify your email address. Do that before proceedin
 ### Update Your Profile
 You need to update your profile to include your name and SSH public key. There are also some optional settings you can change such as your avatar (profile picture) and [email](https://github.com/blog/1214-notification-email-improvements) [notifications](https://github.com/blog/1204-notifications-stars).
 
-In your [Profile Settings](https://github.com/settings/profile):
+1.In your [Profile Settings](https://github.com/settings/profile):
   + Put your real name in the name field. This is to ensure the TAs & CPs know who you are regardless of your username.
   + [Optional] Change your [avatar](http://gravatar.com/)
 
-In your [SSH Key Settings](https://github.com/settings/ssh):
+1.In your [SSH Key Settings](https://github.com/settings/ssh):
   + Click on **Add SSH Key**
   + Provide a **name** for the key, such as "CS102 VM Key"
   + Copy the contents of your `id_rsa.pub` file and paste them into the **key** field
   + Click **Add Key**
 
-[Optional] You can add more emails to your GitHub account using the [Email Settings](https://github.com/settings/emails) page.
+1.[Optional] You can add more emails to your GitHub account using the [Email Settings](https://github.com/settings/emails) page.
 
-[Optional] Set your notification preferences on the [Notification Setttings](https://github.com/settings/notifications) page.
+1.[Optional] Set your notification preferences on the [Notification Setttings](https://github.com/settings/notifications) page.
 
 ### Demo
   1. Show your TA/CP your [GitHub Contributions](https://github.com/blog/1360-introducing-contributions) page at https://github.com/username where `username` is your GitHub username.
