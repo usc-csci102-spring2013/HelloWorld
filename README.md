@@ -31,12 +31,14 @@ git config --global color.ui auto
 
 Due to different operating systems treating the end of line `('\n')` character differently, you can make git normalize the line feed for you based on your OS:
 + Linux & MacOS
-```
+
+```shell
 #LF Normalization (Linux & MacOS)
 git config --global core.autocrlf input
 ```
 + Windows
-```
+
+```shell
 #LF Normalization (Windows)
 git config --global core.autocrlf true
 ```
