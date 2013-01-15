@@ -6,6 +6,7 @@ This is our obligatory Hello World _public_ repository. If you only see this rep
 
 In this course, we will using the following VirtualBox Appliance as the reference system for grading:
 > http://ee-classes.usc.edu/cs101/cs102-vm.ova
+
 This is an Ubuntu 12.04 LTS VM. You can login using:
   + Username: `cs102`
   + Password: `memory`
@@ -54,6 +55,7 @@ By default, git communicates with servers using the git protocol that works over
 
 This guide will walk you through generating an SSH keypair:
 > https://help.github.com/articles/generating-ssh-keys
+
 You will need the contents of the `id_rsa.pub` in the following part of the assignment.
 
 ### Demo
