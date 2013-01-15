@@ -134,10 +134,11 @@ You can do the same on GitHub by clicking the [HelloWorld.cpp](https://github.co
 Now, lets create our own repositry and using git to keep track of our code.
 Create a _public_ repository called `FightOn` using GitHub:
 >https://github.com/new
-  - Add a optional description
-  - This should be a *public* respository
-  - [x] Initialize this repository with a README
-  - Do not add a `.gitignore` file.
+
+- Add a optional description
+- This should be a *public* respository
+- [x] Initialize this repository with a README
+- Do not add a `.gitignore` file.
 
 Clone the repository to your own machine using the SSH-based URL, i.e. the one starting with `git@github.com/...`.
 
@@ -150,7 +151,27 @@ Now, that you have a fully functioning program, you should add it to your reposi
 ```shell
 git status
 ```
+This will show that you have two *untracked* files: `FightOn.cpp` and `a.out`. Since it is bad practice to push binary files to your repository, we are only going to add the FightOn program:
+```shell
+git add FightOn.cpp
+```
+Now, check the status and try to read through the whole message and see if it makes sense:
+```shell
+git status
+```
+At this stage, your `FightOn.cpp` file is added and ready to be committed. When you `commit` a file or a collection of files you are recording the changes to the repository:
+```shell
+git commit -m "Created the FightOn HelloWorld-like application"
+```
+The text after the `-m` is actually a mandatory message that git adds as part of the commit. If you don't supply a message via the commandline, an editor will automatically open prompting you enter a message.
 
+If you refresh your FightOn repository webpage on GitHub, you will notice that it does not yet have your `FightOn.cpp`. The reason being that although you committed the file locally, you have yet to push the changes to the server. You do that by:
+```shell
+git push
+``` 
+
+## Demo
+Show your TA/CP your FightOn repository on GitHub.
 
 ## Git Reources
 For more information about git, visit our [Git Resources](https://github.com/usc-csci102-spring2013/HelloWorld/blob/master/Git-Resources.md) document.
