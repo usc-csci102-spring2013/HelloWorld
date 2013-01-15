@@ -104,7 +104,7 @@ In your [SSH Key Settings](https://github.com/settings/ssh):
   1. Show your TA/CP your [SSH Key](https://github.com/settings/ssh) settings page.
   1. Ask your TA/CP to add your username to your Blackboard profile.
 
-## HelloWorld Repsitory
+## HelloWorld Repository
 The most basic use of git is to checkout a code repository to your local machine. That is called **cloning** a repository. To clone this repository, you run the following command:
 ```shell
 git clone git@github.com:usc-csci102-spring2013/HelloWorld.git
@@ -112,7 +112,7 @@ git clone git@github.com:usc-csci102-spring2013/HelloWorld.git
 This will create a copy of the [HelloWorld](https://github.com/usc-csci102-spring2013/HelloWorld) repository on your machine in a directory named `HelloWorld`. Unlike other version control systems such as subversion, you now have a complete copy of the whole repository including its history.
 
 ### Basic Operations
-To make sure your repositroy is up to date with the version on the server, you `pull` the most recent changes to your local copy:
+To make sure your repository is up to date with the version on the server, you `pull` the most recent changes to your local copy:
 ```shell
 git pull
 ```
@@ -123,12 +123,34 @@ git log
 ```
 This lists the commit history in reverse chronological order. You navigate this screen using the `SPACE`, `ENTER` or arrow keys. To quit press `q`.
 
+You can check the history of a specific file using `git log`:
+```shell
+git log HelloWorld.cpp
+```
+You can do the same on GitHub by clicking the [HelloWorld.cpp](https://github.com/usc-csci102-spring2013/HelloWorld/blob/master/HelloWorld.cpp) file and pressing the History button
+
 
 ## FightOn Repsitory
+Now, lets create our own repositry and using git to keep track of our code.
+Create a _public_ repository called `FightOn` using GitHub:
+>https://github.com/new
+  - Add a optional description
+  - This should be a *public* respository
+  - [x] Initialize this repository with a README
+  - Do not add a `.gitignore` file.
 
-- create your own repo
-- update .gitignore
-- push FightOn.cpp
+Clone the repository to your own machine using the SSH-based URL, i.e. the one starting with `git@github.com/...`.
+
+Create a C++ file called `FightOn.cpp` using your editor of choice, e.g. emacs, vi or gedit.
+  - Write a HelloWorld-style program the prints `Fight On!`.
+  - Compile your code using the `g++` compiler: `g++ FightOn.cpp`
+  - Run it to make sure it works
+
+Now, that you have a fully functioning program, you should add it to your repository and push it to GitHub. To find out the current state of your repository, you check its `status`:
+```shell
+git status
+```
+
 
 ## Git Reources
 For more information about git, visit our [Git Resources](https://github.com/usc-csci102-spring2013/HelloWorld/blob/master/Git-Resources.md) document.
