@@ -22,6 +22,21 @@ Start by downloading the latest [git](http://git-scm.com/) package from the offi
 
 Installing the downloaded package should be straight forward.
 
+If you are using `aludra.usc.edu`, run the following set of commands to install git on your account:
+```shell
+cp ~/.cshrc ~/.cshrc.backup
+echo "" >> ~/.cshrc
+echo "# Git Setup" >> ~/.cshrc
+echo "source /usr/usc/git/default/setup.csh" >> ~/.cshrc
+source ~/.cshrc
+```
+
+To your installtion on aludra or any other system, run the following command in the terminal (_use Git Bash in Windows and make sure you open a new terminal window in Mac_):
+```shell
+git --version
+```
+which should give you the current version of git installed on your system.
+
 ### Configure Git
 In this stage you tell git what your name and email are and your editor of choice. In Linux or MacOS, you should run the following commands in the terminal. In Windows, you need use the Git Bash application.
 ```shell
