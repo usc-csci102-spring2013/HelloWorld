@@ -30,6 +30,7 @@ git config --global user.name "Tommy Trojan"
 git config --global user.email "ttrojan@usc.edu"
 
 #Pick your editor of choice to edit commit messages (not code)
+# Note that you should pick an editor that is installed on your machine
 git config --global core.editor emacs
 
 #Lets get pretty colored output!
@@ -53,7 +54,7 @@ git config --global core.autocrlf true
 ### SSH Key-based Authentication
 By default, git communicates with servers using the git protocol that works over [SSH](http://en.wikipedia.org/wiki/Secure_Shell). Therefore, it is advised to generate [SSH keys](http://en.wikipedia.org/wiki/Secure_Shell#Key_management) for authentication purposes.
 
-This guide will walk you through generating an SSH keypair. This page auto-detects your operating system, so make sure your are following the correct instructions. Keep in mind that step 2 is only needed if you have an existing key pair:
+This guide will walk you through generating an SSH keypair. You need to follow Steps *1* and *3* only. Step 2 is only needed if you have keys already generated. This page auto-detects your operating system, so make sure your are following the correct instructions. Keep in mind that step 2 is only needed if you have an existing key pair:
 > https://help.github.com/articles/generating-ssh-keys
 
 You will need the contents of the `id_rsa.pub` in the following part of the assignment.
@@ -107,7 +108,9 @@ In your [SSH Key Settings](https://github.com/settings/ssh):
 ## HelloWorld Repository
 The most basic use of git is to checkout a code repository to your local machine. That is called **cloning** a repository. To clone this repository, you run the following command:
 ```shell
+cd
 git clone git@github.com:usc-csci102-spring2013/HelloWorld.git
+cd HelloWorld
 ```
 This will create a copy of the [HelloWorld](https://github.com/usc-csci102-spring2013/HelloWorld) repository on your machine in a directory named `HelloWorld`. Unlike other version control systems such as subversion, you now have a complete copy of the whole repository including its history.
 
@@ -137,10 +140,15 @@ Create a _public_ repository called `FightOn` using GitHub:
 
 - Add a optional description
 - This should be a *public* respository
-- [x] Initialize this repository with a README
+- [X] Initialize this repository with a README
 - Do not add a `.gitignore` file.
 
-Clone the repository to your own machine using the SSH-based URL, i.e. the one starting with `git@github.com/...`.
+Make sure you are not inside the HelloWorld repository on your local machine:
+```shell
+cd
+pwd
+```
+Then, clone the repository to your own machine using the SSH-based URL, i.e. the one starting with `git@github.com/...`.
 
 Create a C++ file called `FightOn.cpp` using your editor of choice, e.g. emacs, vi or gedit.
   - Write a HelloWorld-style program the prints `Fight On!`.
