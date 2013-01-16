@@ -118,7 +118,9 @@ In your [SSH Key Settings](https://github.com/settings/ssh):
 ### Demo
   1. Show your TA/CP your [GitHub Contributions](https://github.com/blog/1360-introducing-contributions) page at https://github.com/username where `username` is your GitHub username.
   1. Show your TA/CP your [SSH Key](https://github.com/settings/ssh) settings page.
-  1. Ask your TA/CP to add your username to your Blackboard profile.
+  1. Go to the [GitHub Account Registration](https://docs.google.com/a/usc.edu/spreadsheet/viewform?formkey=dFNpLTJnVHJ4LUxicm5RSi1TczNSQmc6MQ) form:
+      + Fill the form
+      + Show your TA/CP the confirmation page.
 
 ## HelloWorld Repository
 The most basic use of git is to checkout a code repository to your local machine. That is called **cloning** a repository. To clone this repository, you run the following command:
