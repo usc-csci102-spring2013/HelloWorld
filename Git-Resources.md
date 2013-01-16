@@ -21,6 +21,9 @@ As with almost all technologies, there are two main ways to learn things: a form
 1. The [Pro Git](http://git-scm.com/book) book is a concise discussion of git, how and why it works. The book is available freely online and licensed under [CC BY-NC-SA 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/).
     + For a basic intro to git, read chapters [1](http://git-scm.com/book/en/Getting-Started) and [2](http://git-scm.com/book/en/Git-Basics)
     + [Chapter 3](http://git-scm.com/book/en/Git-Branching) discusses branching which is an important aspect about git, however, it is not fundamental when you are just getting started.
+1. [Git Magic](http://www-cs-students.stanford.edu/~blynn/gitmagic/) is smartly written lightweight introduction git for CS students by [Ben Lynn](http://www-cs-students.stanford.edu/~blynn/) that is available for free under the [GNU GPLv3](http://www.gnu.org/licenses/gpl-3.0.html) license. This book has a more practical approach and does not dive into concepts as much as [Pro Git](http://git-scm.com/book). The book is also available as a [GitHub repository](https://github.com/blynn/gitmagic).
+    + To get started with git, you will need to read chapters [2](http://www-cs-students.stanford.edu/~blynn/gitmagic/ch02.html) and [3](http://www-cs-students.stanford.edu/~blynn/gitmagic/ch03.html).
+    + Chapters [4](http://www-cs-students.stanford.edu/~blynn/gitmagic/ch04.html) and [5](http://www-cs-students.stanford.edu/~blynn/gitmagic/ch05.html) will give you a better idea on how to use git effectively in introduce to essential git features such as branching and logs.
 
 ### Tutorials
 + [GitHub's Try Git](http://try.github.com) is an interactive introduction which is also part of [Code School](http://www.codeschool.com/courses/try-git)
