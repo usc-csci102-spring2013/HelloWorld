@@ -118,9 +118,6 @@ In your [SSH Key Settings](https://github.com/settings/ssh):
 ### Demo
   1. Show your TA/CP your [GitHub Contributions](https://github.com/blog/1360-introducing-contributions) page at https://github.com/username where `username` is your GitHub username.
   1. Show your TA/CP your [SSH Key](https://github.com/settings/ssh) settings page.
-  1. Go to the [GitHub Account Registration](https://docs.google.com/a/usc.edu/spreadsheet/viewform?formkey=dFNpLTJnVHJ4LUxicm5RSi1TczNSQmc6MQ) form:
-      + Fill the form
-      + Show your TA/CP the confirmation page.
 
 ## HelloWorld Repository
 The most basic use of git is to checkout a code repository to your local machine. That is called **cloning** a repository. To clone this repository, you run the following command:
@@ -155,10 +152,10 @@ Now, lets create our own repositry and using git to keep track of our code.
 Create a _public_ repository called `FightOn` using GitHub:
 >https://github.com/new
 
-- Add a optional description
-- This should be a *public* respository
-- [X] Initialize this repository with a README
-- Do not add a `.gitignore` file.
+  - Add a optional description
+  - This should be a *public* respository
+  - [x] Initialize this repository with a README
+  - Do not add a `.gitignore` file.
 
 Make sure you are not inside the HelloWorld repository on your local machine:
 ```shell
@@ -200,9 +197,14 @@ Finally, lets do a `git status` again. You will notice that `a.out` is still lis
 So, create a `.gitignore` file and list the `a.out` file in it then do a `git status`! Don't forget to push your `.gitignore` to your repository. 
 
 ## Demo
-Show your TA/CP your FightOn repository on GitHub which should include:
-  - `FightOn.cpp`
-  - `.gitignore`
+1. Show your TA/CP your FightOn repository on GitHub which should include:
+    + `FightOn.cpp`
+    + `.gitignore`
+1. Go to the [GitHub Account Registration](https://docs.google.com/a/usc.edu/spreadsheet/viewform?formkey=dFNpLTJnVHJ4LUxicm5RSi1TczNSQmc6MQ) form:
+    + Fill the form
+    + Show your TA/CP the confirmation page.
+
+
 
 ## Git Reources
 For more information about git, visit our [Git Resources](https://github.com/usc-csci102-spring2013/HelloWorld/blob/master/Git-Resources.md) document.
