@@ -163,7 +163,7 @@ Make sure you are not inside the HelloWorld repository on your local machine:
 cd
 pwd
 ```
-Then, clone the repository to your own machine using the SSH-based URL, i.e. the one starting with `git@github.com/...`.
+Then, clone the repository to your own machine using the *SSH-based* URL, i.e. the one starting with `git@github.com/...`.
 
 Create a C++ file called `FightOn.cpp` using your editor of choice, e.g. emacs, vi or gedit.
   - Write a HelloWorld-style program the prints `Fight On!`.
